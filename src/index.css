@@ -1,0 +1,98 @@
+@import "tailwindcss";
+
+@theme {
+  --font-headline: "Manrope", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "Manrope", ui-sans-serif, system-ui, sans-serif;
+  --font-label: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+
+  --color-primary: #3b82f6;
+  --color-primary-container: #2563eb;
+  --color-secondary: #60a5fa;
+  --color-surface-container-low: #141313;
+  --color-surface-container-lowest: #000000;
+  --color-on-surface: #ffffff;
+  --color-on-surface-variant: #adaaaa;
+
+  --color-background: #010101;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-on-surface font-body selection:bg-primary-container selection:text-white;
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .glass-panel {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .glass-card {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+
+  .glass-card:hover {
+    transform: translateY(-12px);
+    border-color: rgba(59, 130, 246, 0.5);
+    box-shadow: 0 20px 40px -15px rgba(37, 99, 235, 0.4);
+    background: rgba(59, 130, 246, 0.04);
+  }
+
+  .text-gradient {
+    background: linear-gradient(to right, #ffffff, #60a5fa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .hero-gradient {
+    background: linear-gradient(135deg, #60a5fa 0%, #3b82f6 50%, #2563eb 100%);
+  }
+
+  .glow-button {
+    transition: all 0.3s ease;
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.3);
+  }
+
+  .glow-button:hover {
+    box-shadow: 0 0 30px rgba(59, 130, 246, 0.6);
+    transform: translateY(-2px);
+  }
+
+  .shine-effect {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .shine-effect::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    background: linear-gradient(
+      to right,
+      transparent,
+      rgba(255, 255, 255, 0.2) 50%,
+      transparent
+    );
+    transform: translateX(-150%) skewX(-30deg);
+    pointer-events: none;
+    animation: shine 4s infinite linear;
+  }
+}
+
+@keyframes shine {
+  0% { transform: translateX(-150%) skewX(-30deg); }
+  35% { transform: translateX(150%) skewX(-30deg); }
+  100% { transform: translateX(150%) skewX(-30deg); }
+}
+
