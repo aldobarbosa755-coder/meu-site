@@ -21,7 +21,7 @@ export function About() {
             <img 
               alt="Aldo Barbosa de Lima Portrait" 
               className="w-full h-full object-cover transition-all duration-700 group-hover:scale-110" 
-              src="https://i.ibb.co/G4Y4D53R/profile-aldo-jpg.webp" 
+              src="/profile.jpg" 
               loading="lazy"
               width="600"
               height="600"

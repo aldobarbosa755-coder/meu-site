@@ -143,7 +143,7 @@ export function BentoGrid() {
   ];
 
   return (
-    <section className="py-32 max-w-7xl mx-auto px-6" id="process">
+    <section className="py-32 max-w-7xl mx-auto px-6" id="features">
       <div className="mb-20 text-center">
         <motion.h2 
           initial={{ opacity: 0, y: 20 }}

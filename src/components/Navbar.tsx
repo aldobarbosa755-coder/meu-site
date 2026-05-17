@@ -27,20 +27,20 @@ export function Navbar() {
 
   const navLinks = [
     { name: t('nav-work'), href: '#work' },
+    { name: t('nav-about'), href: '#about' },
     { name: t('nav-services'), href: '#services' },
     { name: t('nav-process'), href: '#process' },
-    { name: t('nav-about'), href: '#about' },
   ];
 
   return (
     <>
       <header className="fixed top-6 left-0 right-0 mx-auto w-full z-[9999] px-6">
         <nav className="max-w-7xl mx-auto rounded-full border border-white/10 bg-[rgba(28,27,36,0.65)] backdrop-blur-xl shadow-[0_8px_32px_0_rgba(0,0,0,0.5)] flex justify-between items-center px-8 py-4">
-          <div className="flex items-center gap-2">
-            <span className="font-headline tracking-tight text-white text-lg whitespace-nowrap overflow-hidden text-ellipsis">
+          <a href="#" className="flex items-center gap-2 group">
+            <span className="font-headline tracking-tight text-white text-lg whitespace-nowrap overflow-hidden text-ellipsis group-hover:opacity-80 transition-opacity">
               <span className="font-normal">Aldo Barbosa</span> <span className="font-extrabold text-secondary">de Lima</span>
             </span>
-          </div>
+          </a>
 
           <div className="hidden lg:flex gap-8 items-center">
             {navLinks.map((link) => (

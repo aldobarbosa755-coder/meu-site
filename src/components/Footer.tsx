@@ -46,13 +46,14 @@ export function Footer() {
                     <ul className="space-y-4">
                         <li><a className="text-zinc-500 hover:text-blue-400 transition-colors text-sm" href="#">{t('footer-home')}</a></li>
                         <li><a className="text-zinc-500 hover:text-blue-400 transition-colors text-sm" href="#work">{t('nav-work')}</a></li>
-                        <li><a className="text-zinc-500 hover:text-blue-400 transition-colors text-sm" href="#services">{t('nav-services')}</a></li>
                         <li><a className="text-zinc-500 hover:text-blue-400 transition-colors text-sm" href="#about">{t('nav-about')}</a></li>
+                        <li><a className="text-zinc-500 hover:text-blue-400 transition-colors text-sm" href="#services">{t('nav-services')}</a></li>
+                        <li><a className="text-zinc-500 hover:text-blue-400 transition-colors text-sm" href="#process">{t('nav-process')}</a></li>
                     </ul>
                 </div>
                 <div>
                     <h3 className="text-zinc-100 font-bold mb-6 font-label uppercase tracking-widest text-xs">{t('footer-contact')}</h3>
-                    <p className="text-zinc-500 text-sm mb-2">João Pessoa – PB | Brasil</p>
+                    <p className="text-zinc-500 text-sm mb-2">Remote | Global</p>
                     <a href="mailto:aldobarbosa755@gmail.com" className="text-zinc-500 hover:text-blue-400 transition-colors text-sm block">
                         aldobarbosa755@gmail.com
                     </a>
