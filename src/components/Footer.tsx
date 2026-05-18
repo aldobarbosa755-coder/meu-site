@@ -53,7 +53,7 @@ export function Footer() {
                 </div>
                 <div>
                     <h3 className="text-zinc-100 font-bold mb-6 font-label uppercase tracking-widest text-xs">{t('footer-contact')}</h3>
-                    <p className="text-zinc-500 text-sm mb-2">Remote | Global</p>
+                    <p className="text-zinc-500 text-sm mb-2">Brasil · Disponível Globalmente</p>
                     <a href="mailto:aldobarbosa755@gmail.com" className="text-zinc-500 hover:text-blue-400 transition-colors text-sm block">
                         aldobarbosa755@gmail.com
                     </a>

@@ -19,7 +19,7 @@ export function About() {
           <div className="absolute inset-0 hero-gradient blur-[100px] opacity-20 group-hover:opacity-50 transition-all duration-700 -z-10 scale-100 group-hover:scale-125"></div>
           <div className="relative aspect-square rounded-[2rem] md:rounded-[3rem] overflow-hidden border border-white/10 shadow-[0_0_40px_rgba(59,130,246,0.3)] transition-all duration-700 group-hover:-translate-y-4 group-hover:shadow-[0_20px_60px_rgba(59,130,246,0.4)]">
             <img 
-              alt="Aldo Barbosa de Lima Portrait" 
+              alt="Aldo Barbosa de Lima, UI/UX Designer e Web Developer" 
               className="w-full h-full object-cover transition-all duration-700 group-hover:scale-110" 
               src="/profile.jpg" 
               loading="lazy"
