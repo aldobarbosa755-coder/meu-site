@@ -2,6 +2,7 @@ import React, { useRef, useState, ReactNode } from 'react';
 import { motion } from 'motion/react';
 
 interface MagneticProps {
+  key?: React.Key;
   children: ReactNode;
   strength?: number;
   className?: string;

@@ -21,16 +21,6 @@ export function Portfolio() {
       image: "https://images.unsplash.com/photo-1614850523296-d8c1af93d400?q=80&w=1000&auto=format&fit=crop"
     },
     {
-      id: 1,
-      tag: t('proj-1-tag'),
-      title: t('proj-1-t'),
-      description: t('proj-1-d'),
-      features: [t('proj-1-f1'), t('proj-1-f2')],
-      url: "https://imobiliaria.aldolima.dev.br/",
-      iframe: "https://imobiliaria.aldolima.dev.br/",
-      image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=1000&auto=format&fit=crop"
-    },
-    {
       id: 2,
       tag: t('proj-2-tag'),
       title: t('proj-2-t'),
@@ -41,14 +31,24 @@ export function Portfolio() {
       image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1000&auto=format&fit=crop"
     },
     {
-      id: 3,
-      tag: t('proj-3-tag'),
-      title: t('proj-3-t'),
-      description: t('proj-3-d'),
-      features: [t('proj-3-f1'), t('proj-3-f2')],
-      url: "https://lumiere.aldolima.dev.br/",
-      iframe: "https://lumiere.aldolima.dev.br/",
-      image: "https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=1000&auto=format&fit=crop"
+      id: 5,
+      tag: t('proj-5-tag'),
+      title: t('proj-5-t'),
+      description: t('proj-5-d'),
+      features: [t('proj-5-f1'), t('proj-5-f2')],
+      url: "https://aether.aldolima.dev.br/",
+      iframe: "https://aether.aldolima.dev.br/",
+      image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1000&auto=format&fit=crop"
+    },
+    {
+      id: 6,
+      tag: t('proj-6-tag'),
+      title: t('proj-6-t'),
+      description: t('proj-6-d'),
+      features: [t('proj-6-f1'), t('proj-6-f2')],
+      url: "https://luxury.aldolima.dev.br/",
+      iframe: "https://luxury.aldolima.dev.br/",
+      image: "https://images.unsplash.com/photo-1509631179647-0177331693ae?q=80&w=1000&auto=format&fit=crop"
     }
   ];
 
@@ -230,7 +230,7 @@ export function Portfolio() {
   );
 }
 
-function MobileProjectCard({ project, t }: { project: any, t: any }) {
+function MobileProjectCard({ project, t }: { key?: any, project: any, t: any }) {
   const x = useMotionValue(0);
   const y = useMotionValue(0);
   const mouseXSpring = useSpring(x);

@@ -86,7 +86,17 @@ const translations = {
     "footer-menu": "Menu",
     "footer-home": "Início",
     "footer-contact": "Contacto",
-    "footer-copy": "© 2026 Aldo Barbosa de Lima. Todos os direitos reservados."
+    "footer-copy": "© 2026 Aldo Barbosa de Lima. Todos os direitos reservados.",
+    "proj-5-tag": "Estúdio Criativo · Branding",
+    "proj-5-t": "Aether",
+    "proj-5-d": "Página de alta sofisticação para agência de design e branding de luxo. Transições dinâmicas, estética dark e tipografia requintada.",
+    "proj-5-f1": "Estética etérea minimalista",
+    "proj-5-f2": "Experiência ultra-premium",
+    "proj-6-tag": "Curadoria de Moda · High-End",
+    "proj-6-t": "Luxury Concept",
+    "proj-6-d": "Interface exclusiva para curadoria de produtos de luxo e alta-costura. Foco absoluto em refinamento visual, espaço em branco e imagens impactantes.",
+    "proj-6-f1": "Direção de arte editorial",
+    "proj-6-f2": "Navegação fluida e sutil"
   },
   en: {
     "nav-work": "Work",
@@ -165,7 +175,17 @@ const translations = {
     "footer-menu": "Menu",
     "footer-home": "Home",
     "footer-contact": "Contact",
-    "footer-copy": "© 2026 Aldo Barbosa de Lima. All rights reserved."
+    "footer-copy": "© 2026 Aldo Barbosa de Lima. All rights reserved.",
+    "proj-5-tag": "Creative Studio · Branding",
+    "proj-5-t": "Aether",
+    "proj-5-d": "Highly sophisticated page for a luxury design and branding agency. Dynamic transitions, dark aesthetics, and exquisite typography.",
+    "proj-5-f1": "Ethereal minimalist aesthetics",
+    "proj-5-f2": "Ultra-premium experience",
+    "proj-6-tag": "Fashion Curation · High-End",
+    "proj-6-t": "Luxury Concept",
+    "proj-6-d": "Exclusive interface for luxury and haute couture product curation. Absolute focus on visual refinement, negative space, and impactful imagery.",
+    "proj-6-f1": "Editorial art direction",
+    "proj-6-f2": "Fluid and subtle navigation"
   }
 };
 
