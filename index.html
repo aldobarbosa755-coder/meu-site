@@ -1,6 +1,20 @@
 <!doctype html>
 <html lang="pt-BR">
   <head>
+    <script>
+      // Early suppression of cross-origin script errors
+      window.addEventListener('error', function(event) {
+        if (event.message && (event.message.includes('Script error') || event.message.includes('Script error.'))) {
+          event.stopImmediatePropagation();
+          event.preventDefault();
+        }
+      }, true);
+      window.onerror = function(message) {
+        if (typeof message === 'string' && (message.includes('Script error') || message.includes('Script error.'))) {
+          return true; // Suppress default browser error handling
+        }
+      };
+    </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aldo Barbosa - UI/UX Designer & Web Developer</title>
