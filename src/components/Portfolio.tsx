@@ -17,9 +17,9 @@ export function Portfolio() {
       title: t('proj-4-t'),
       description: t('proj-4-d'),
       features: [t('proj-4-f1'), t('proj-4-f2')],
-      url: "https://cyberpunk.aldolima.dev.br/",
-      iframe: "https://cyberpunk.aldolima.dev.br/",
-      image: "https://images.unsplash.com/photo-1614850523296-d8c1af93d400?q=80&w=1000&auto=format&fit=crop"
+      url: "https://novara-whyu.vercel.app/",
+      iframe: "https://novara-whyu.vercel.app/",
+      image: "/assets/projects/novara.png"
     },
     {
       id: 2,
@@ -29,7 +29,7 @@ export function Portfolio() {
       features: [t('proj-2-f1'), t('proj-2-f2')],
       url: "https://sovereign.aldolima.dev.br/",
       iframe: "https://sovereign.aldolima.dev.br/",
-      image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1000&auto=format&fit=crop"
+      image: "/assets/projects/sovereign.png"
     },
     {
       id: 5,
@@ -37,9 +37,9 @@ export function Portfolio() {
       title: t('proj-5-t'),
       description: t('proj-5-d'),
       features: [t('proj-5-f1'), t('proj-5-f2')],
-      url: "https://aether.aldolima.dev.br/",
-      iframe: "https://aether.aldolima.dev.br/",
-      image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1000&auto=format&fit=crop"
+      url: "https://axiom-gkfd.vercel.app/",
+      iframe: "https://axiom-gkfd.vercel.app/",
+      image: "/assets/projects/axiom.png"
     },
     {
       id: 6,
@@ -49,7 +49,7 @@ export function Portfolio() {
       features: [t('proj-6-f1'), t('proj-6-f2')],
       url: "https://luxury.aldolima.dev.br/",
       iframe: "https://luxury.aldolima.dev.br/",
-      image: "https://images.unsplash.com/photo-1509631179647-0177331693ae?q=80&w=1000&auto=format&fit=crop"
+      image: "/assets/projects/luxury.png"
     }
   ];
 
@@ -179,7 +179,7 @@ export function Portfolio() {
                         src={project.image} 
                         alt={project.title}
                         referrerPolicy="no-referrer"
-                        className="w-full h-full object-cover lg:scale-[1.05] lg:group-hover:scale-[1.1] transition-transform duration-700"
+                        className="w-full h-full object-cover object-top lg:scale-[1.01] lg:group-hover:scale-[1.03] transition-transform duration-700"
                       />
                     )}
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent z-10 pointer-events-none" />
@@ -367,7 +367,7 @@ function MobileProjectCard({ project, t }: MobileProjectCardProps) {
                 src={project.image} 
                 alt={project.title}
                 referrerPolicy="no-referrer"
-                className="w-full h-full object-cover transition-transform duration-500"
+                className="w-full h-full object-cover object-top transition-transform duration-500"
               />
             )}
           </div>
